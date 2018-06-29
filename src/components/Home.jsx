@@ -3,6 +3,8 @@ import { Route, Link, Switch, Redirect } from "react-router-dom";
 import axios from "axios";
 import "./Home.css";
 
+const API_KEY = '73efbb05a691a71033db9af2190896d5';
+
 class Home extends Component {
   cityArrays = [];
   constructor() {
@@ -35,7 +37,7 @@ class Home extends Component {
     this.state.cities.map(city =>
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=73efbb05a691a71033db9af2190896d5&units=imperial`
+          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`
         )
         .then(res => {
           this.cityArrays = [...this.cityArrays, res.data];

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./fiveDaysWeather.css";
 
+const API_KEY = '73efbb05a691a71033db9af2190896d5';
+
 class FiveDaysWeather extends Component {
   constructor() {
     super();
@@ -45,7 +47,7 @@ class FiveDaysWeather extends Component {
       .get(
         `http://api.openweathermap.org/data/2.5/forecast?q=${
           this.props.match.params.city
-        }&appid=73efbb05a691a71033db9af2190896d5&units=imperial`
+        }&appid=${API_KEY}&units=imperial`
       )
       .then(res => {
         this.setState({
