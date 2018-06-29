@@ -3,6 +3,7 @@
 .flex-container2 {
   padding: 0.1px;
   border: 0.03px dotted black;
+  list-style: none;
 }
 
 .list2 .flex-container2{
