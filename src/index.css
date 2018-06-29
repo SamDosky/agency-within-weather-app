@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Mono', monospace;
+  background: linear-gradient(
+      135deg,
+      rgba(130, 187, 240, 0.5) 0%,
+      rgba(86, 135, 224, 0.68) 39%,
+      rgba(202, 200, 236, 0.6) 50%,
+      rgba(182, 227, 238, 0.59) 51%,
+      rgba(255, 254, 254, 0.7) 91%,
+      rgba(113, 142, 223, 0.8) 100%
+    );
+  color:  #ffe4e4;
+}
+

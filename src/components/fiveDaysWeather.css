@@ -1,0 +1,33 @@
+
+
+.flex-container2 {
+  padding: 0.1px;
+  border: 0.03px dotted black;
+}
+
+.list2 .flex-container2{
+    margin: 6px;
+    display: inline-block;
+    background-color:  rgb(41, 41, 49);
+    border-radius: 20px;
+}
+
+.list2 .flex-container2:hover{
+    margin: 6px;
+    display: inline-block;
+    background-color:rgb(168, 168, 235);
+    border-radius: 20px;
+    color:black
+}
+
+.list2 .flex-container2 li{
+    padding:40px;
+}
+
+
+
+.list2{
+    -webkit-row-count: 5; /* Chrome, Safari, Opera */
+    -moz-row-count: 5; /* Firefox */
+    list-style: none;
+}

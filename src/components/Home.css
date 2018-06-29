@@ -1,0 +1,49 @@
+.list{
+    padding-left: 00px;
+    padding-right:750px;
+}
+
+.list a {
+    margin:16px 0px;
+    border: 1px solid rgb(240, 198, 198);
+    padding: 12px 20px 12px 40px;
+    margin: 10px 5px 5px 10px;
+    border-radius: 20px;
+    background: linear-gradient(
+      135deg,
+      rgba(130, 187, 240, 0.5) 0%,
+      rgba(86, 135, 224, 0.68) 39%,
+      rgba(202, 200, 236, 0.6) 50%,
+      rgba(182, 227, 238, 0.59) 51%,
+      rgba(255, 254, 254, 0.7) 91%,
+      rgba(113, 142, 223, 0.8) 100%
+    );
+    text-decoration: none;
+    display: block;
+    color: rgb(226, 226, 236);
+    flex-direction: row;
+    cursor: auto;
+    display: block;
+    padding:20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-transition: width 0.4s ease-out;
+    transition: width 0.4s ease-out;
+}
+
+
+.list li img{
+    bottom:50px;
+    left: 140px;
+}
+
+#pic{
+border-radius : 20px;
+position: relative;
+}
+
+.list li a{
+    width:240px;
+}
+
+
