@@ -27,7 +27,7 @@
 
 
 .list2{
-    -webkit-row-count: 5; /* Chrome, Safari, Opera */
-    -moz-row-count: 5; /* Firefox */
+    -webkit-row-count: 5; 
+    -moz-row-count: 5; 
     list-style: none;
 }
