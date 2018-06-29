@@ -37,7 +37,7 @@ class Home extends Component {
     this.state.cities.map(city =>
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`
         )
         .then(res => {
           this.cityArrays = [...this.cityArrays, res.data];
@@ -59,7 +59,7 @@ class Home extends Component {
               <li>
                 <div>
                   <img
-                    src={`http://openweathermap.org/img/w/${
+                    src={`https://openweathermap.org/img/w/${
                       city.weather[0].icon
                     }.png`}
                   />{" "}

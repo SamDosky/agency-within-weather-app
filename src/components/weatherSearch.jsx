@@ -22,7 +22,7 @@ class WeatherSearch extends Component {
   componentDidMount() {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${
+        `https://api.openweathermap.org/data/2.5/weather?q=${
           this.props.match.params.city
         }&appid=${API_KEY}&units=imperial`
       )
@@ -66,7 +66,7 @@ class WeatherSearch extends Component {
                 </div>
                <div> {Date().slice(0,10)} </div>
                 <div className="data">
-                    <div className="icon_weather"> <img src={`http://openweathermap.org/img/w/${icon}.png`} /> </div>
+                    <div className="icon_weather"> <img src={`https://openweathermap.org/img/w/${icon}.png`} /> </div>
                     <div className="temp">{Math.round(temp)} <sup>o</sup>F </div>
                     <div className="weatherType"> {weatherType} </div>
                     <div className="description">

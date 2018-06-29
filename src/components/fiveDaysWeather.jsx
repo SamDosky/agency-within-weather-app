@@ -45,7 +45,7 @@ class FiveDaysWeather extends Component {
   getFiveDaysWeather() {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${
+        `https://api.openweathermap.org/data/2.5/forecast?q=${
           this.props.match.params.city
         }&appid=${API_KEY}&units=imperial`
       )
@@ -62,7 +62,7 @@ class FiveDaysWeather extends Component {
                 </div>
                 <div className="item3">
                   <img
-                    src={`http://openweathermap.org/img/w/${
+                    src={`https://openweathermap.org/img/w/${
                       city.weather[0].icon
                     }.png`}
                   />
